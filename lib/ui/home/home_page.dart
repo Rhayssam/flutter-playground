@@ -12,23 +12,38 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
       appBar: CustomAppBar.primaryContainer(
         title: Text('Home Page'),
-        leading: Builder(
-          builder: (context) {
-            return IconButton(
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-              icon: Icon(
-                Icons.menu,
-              ),
-            );
-          },
-        ),
+        actions: [
+          Builder(
+            builder: (context) {
+              return IconButton(
+                onPressed: () {
+                  Scaffold.of(context).openEndDrawer();
+                },
+                icon: Icon(
+                  Icons.menu,
+                ),
+              );
+            },
+          ),
+        ],
       ),
-      drawer: HomeDrawer(),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [],
+      endDrawer: HomeDrawer(),
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(color: Theme.of(context).colorScheme.primaryContainer),
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Icon(Icons.abc),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
