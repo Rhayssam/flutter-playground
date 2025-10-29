@@ -9,11 +9,13 @@ class ThemeSwitch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Switch(
-      value: _controller.isDarkMode,
-      onChanged: (_) {
-        _controller.switchThemeMode();
-      },
-    );
+    return Obx(() {
+      return Switch(
+        value: _controller.isDarkMode,
+        onChanged: (_) {
+          _controller.switchThemeMode();
+        },
+      );
+    });
   }
 }
