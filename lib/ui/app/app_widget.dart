@@ -13,6 +13,7 @@ class AppWidget extends StatelessWidget {
     return GetMaterialApp(
       title: AppConstants.appTitle,
       locale: Locale('pt'),
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
       initialRoute: Routes.splash,
