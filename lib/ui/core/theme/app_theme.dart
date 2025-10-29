@@ -16,7 +16,7 @@ class AppTheme {
   final ColorScheme colorScheme;
 
   ThemeData get themeData => ThemeData(
-    // colorScheme: colorScheme,
+    colorScheme: colorScheme,
     textTheme: textTheme,
     // elevatedButtonTheme: elevatedButtonTheme,
     // outlinedButtonTheme: outlinedButtonTheme,
