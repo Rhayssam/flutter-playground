@@ -25,6 +25,7 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       darkTheme: AppTheme.dark(),
+      themeMode: ThemeMode.system,
       initialRoute: Routes.splash,
       getPages: AppRouter.pages,
       unknownRoute: AppRouter.unknownRoutePage,
