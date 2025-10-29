@@ -1,4 +1,3 @@
-import 'package:flutterplayground/config/constants/assets.dart';
 import 'package:flutterplayground/ui/core/theme/theme_switch.dart';
 import 'package:flutterplayground/ui/core/widgets/custom_app_bar.dart';
 import 'package:flutterplayground/ui/home/widgets/home_drawer.dart';
