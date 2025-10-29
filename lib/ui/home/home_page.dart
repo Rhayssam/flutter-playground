@@ -1,3 +1,4 @@
+import 'package:flutterplayground/ui/core/theme/theme_switch.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -12,7 +13,15 @@ class HomePage extends GetView<HomeController> {
       appBar: AppBar(
         title: Center(child: Text('Home Page', style: GoogleFonts.acme())),
       ),
-      body: Container(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+
+        children: [
+          Center(
+            child: ThemeSwitch(),
+          ),
+        ],
+      ),
     );
   }
 }
