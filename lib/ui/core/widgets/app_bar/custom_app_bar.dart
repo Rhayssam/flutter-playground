@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterplayground/ui/core/widgets/custom_app_bar_styles.dart';
+import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar_styles.dart';
 
 enum CustomAppBarThemeEnum { custom, primary, transparent, primaryContainer, surface }
 
