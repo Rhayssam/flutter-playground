@@ -21,6 +21,9 @@ final class AppColors {
     onError: Color(0xFFFFFFFF),
     primaryContainer: Color(0xFFEBEBEB),
     onPrimaryContainer: Color(0xFF000000),
+    secondaryContainer: Color(0xFFE9EFF7),
+    onSecondaryContainer: Color(0xFF1B1B1B),
+    outline: Color(0xFFCBD0DE),
   );
 
   static final ColorScheme darkColorScheme = ColorScheme(
@@ -39,5 +42,8 @@ final class AppColors {
     onError: Color(0xFFF9F9F9),
     primaryContainer: Color(0xFF1C1E27),
     onPrimaryContainer: Color(0xFFFFFFFF),
+    secondaryContainer: Color(0xFF23252E),
+    onSecondaryContainer: Color(0xFFFFFFFF),
+    outline: Color(0xFF505465),
   );
 }
