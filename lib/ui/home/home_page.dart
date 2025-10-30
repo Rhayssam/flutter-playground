@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar.dart';
 import 'package:flutterplayground/ui/core/widgets/custom_button/custom_button.dart';
 import 'package:flutterplayground/ui/home/widgets/home_drawer.dart';
