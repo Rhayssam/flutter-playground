@@ -41,7 +41,7 @@ class HomePage extends GetView<HomeController> {
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.displayMedium,
               ),
-              CustomButton(),
+              CustomButton(title: 'Título Legal', content: 'Conteúdo legal'),
               const SizedBox(
                 height: 10,
               ),
