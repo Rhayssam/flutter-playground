@@ -5,8 +5,11 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
+    required this.title,
+    required this.content,
   });
-
+  final String title;
+  final String content;
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -30,13 +33,13 @@ class CustomButton extends StatelessWidget {
             spacing: 5,
             children: [
               Text(
-                'Get Started',
+                title,
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
                   color: Theme.of(context).colorScheme.primary,
                 ),
               ),
               Text(
-                'Descrição',
+                content,
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ],
