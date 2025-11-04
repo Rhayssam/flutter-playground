@@ -34,14 +34,33 @@ class HomePage extends GetView<HomeController> {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
-            spacing: 10,
+            spacing: 15,
             children: [
               Text(
                 'Flutter Playground',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.displayMedium,
               ),
-              CustomButton(title: 'Título Legal', content: 'Conteúdo legal'),
+
+              Divider(
+                color: Theme.of(context).colorScheme.outline,
+              ),
+              Text(
+                'Sistemas de projeto',
+                textAlign: TextAlign.start,
+                style: Theme.of(context).textTheme.displaySmall,
+              ),
+              Text('O Flutter é fornecido com dois sistemas de design como parte do SDK.'),
+              CustomButton(
+                title: 'Cupertino',
+                content:
+                    'Widgets bonitos e de alta fidelidade que estão em conformidade com as Diretrizes de Interface Humana da Apple para iOS e macOS.',
+              ),
+              CustomButton(
+                title: 'Material Components',
+                content:
+                    'Widgets visuais, comportamentais e com recursos de movimento, que implementam a especificação de design do Material 3.',
+              ),
               const SizedBox(
                 height: 10,
               ),
