@@ -1,5 +1,7 @@
 import 'package:flutterplayground/routing/routes.dart';
 import 'package:flutterplayground/ui/home/home_bindings.dart';
+import 'package:flutterplayground/ui/material/material_bindings.dart';
+import 'package:flutterplayground/ui/material/material_page.dart';
 import 'package:flutterplayground/ui/splash/splash_bindings.dart';
 
 import 'package:get/get.dart';
@@ -10,14 +12,19 @@ import '../ui/splash/splash_page.dart';
 final class AppRouter {
   static final List<GetPage> pages = [
     GetPage(
+      name: Routes.splash,
+      page: () => SplashPage(),
+      binding: SplashBindings(),
+    ),
+    GetPage(
       name: Routes.home,
       page: () => HomePage(),
       binding: HomeBindings(),
     ),
     GetPage(
-      name: Routes.splash,
-      page: () => SplashPage(),
-      binding: SplashBindings(),
+      name: Routes.material,
+      page: () => MaterialPage(),
+      binding: MaterialBindings(),
     ),
   ];
 
