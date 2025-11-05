@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -7,9 +5,12 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.title,
     required this.content,
+    required this.onTap,
   });
   final String title;
   final String content;
+  final VoidCallback onTap;
+
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -17,7 +18,7 @@ class CustomButton extends StatelessWidget {
       borderRadius: BorderRadius.circular(10),
       child: InkWell(
         borderRadius: BorderRadius.circular(10),
-        onTap: () => log('message'),
+        onTap: onTap,
         child: Ink(
           width: double.infinity,
           decoration: BoxDecoration(
