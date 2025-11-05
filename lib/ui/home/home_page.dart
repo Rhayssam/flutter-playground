@@ -55,15 +55,17 @@ class HomePage extends GetView<HomeController> {
                 title: 'Cupertino',
                 content:
                     'Widgets bonitos e de alta fidelidade que estão em conformidade com as Diretrizes de Interface Humana da Apple para iOS e macOS.',
+                onTap: () {},
               ),
               CustomButton(
                 title: 'Material Components',
                 content:
                     'Widgets visuais, comportamentais e com recursos de movimento, que implementam a especificação de design do Material 3.',
+                onTap: () {
+                  controller.goToMaterialPage();
+                },
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: 10),
             ],
           ),
         ),
