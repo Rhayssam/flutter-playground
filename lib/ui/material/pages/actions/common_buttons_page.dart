@@ -12,7 +12,29 @@ class CommonButtonsPage extends StatelessWidget {
         title: Text('CommonButtons'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: SingleChildScrollView(
+            child: Center(
+              child: Column(
+                children: [
+                  Text(
+                    'Tipos de botões do Material 3',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.displaySmall,
+                  ),
+                  ElevatedButton(onPressed: () {}, child: const Text('Elevated')),
+                  FilledButton(onPressed: () {}, child: const Text('Filled')),
+                  FilledButton.tonal(onPressed: () {}, child: const Text('Filled Tonal')),
+                  OutlinedButton(onPressed: () {}, child: const Text('Outlined')),
+                  TextButton(onPressed: () {}, child: const Text('Text')),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
