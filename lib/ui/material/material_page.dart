@@ -5,7 +5,7 @@ import 'package:flutterplayground/ui/material/widgets/section/section_actions.da
 import 'package:flutterplayground/ui/material/widgets/section/section_comunication.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import './material_controller.dart';
+import 'viewmodel/material_controller.dart';
 
 class MaterialPage extends GetView<MaterialController> {
   const MaterialPage({super.key});

@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
-import './material_controller.dart';
+import 'viewmodel/material_controller.dart';
 
 class MaterialBindings implements Bindings {
-    @override
-    void dependencies() {
-        Get.put(MaterialController());
-    }
+  @override
+  void dependencies() {
+    Get.put(MaterialController());
+  }
 }
