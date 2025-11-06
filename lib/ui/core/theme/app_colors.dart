@@ -23,6 +23,8 @@ final class AppColors {
     onPrimaryContainer: Color(0xFF000000),
     secondaryContainer: Color(0xFFE9EFF7),
     onSecondaryContainer: Color(0xFF1B1B1B),
+    tertiaryContainer: Color(0xFFDADCE0),
+    onTertiaryContainer: Color(0xFF000000),
     outline: Color(0xFFCBD0DE),
   );
 
@@ -44,6 +46,8 @@ final class AppColors {
     onPrimaryContainer: Color(0xFFFFFFFF),
     secondaryContainer: Color(0xFF23252E),
     onSecondaryContainer: Color(0xFFFFFFFF),
+    tertiaryContainer: Color(0xFF202731),
+    onTertiaryContainer: Color(0xFFFFFFFF),
     outline: Color(0xFF505465),
   );
 }
