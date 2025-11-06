@@ -31,4 +31,22 @@ class MaterialController extends GetxController {
       Routes.segmentedButton,
     );
   }
+
+  Future<void> goToBadgePage() async {
+    await Get.toNamed(
+      Routes.badge,
+    );
+  }
+
+  Future<void> goToLinearProgressIndicatorPage() async {
+    await Get.toNamed(
+      Routes.linearProgressIndicator,
+    );
+  }
+
+  Future<void> goToSnackbarPage() async {
+    await Get.toNamed(
+      Routes.snackbar,
+    );
+  }
 }
