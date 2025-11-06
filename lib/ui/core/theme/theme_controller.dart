@@ -21,6 +21,7 @@ class ThemeController extends GetxController {
       _themeMode.value = ThemeMode.dark;
     }
     _applyThemeMode(_themeMode.value);
+    _storage.setThemeMode(_themeMode.value);
   }
 
   void _applyThemeMode(ThemeMode themeMode) {
@@ -42,9 +43,11 @@ class ThemeController extends GetxController {
 
   void _updateSystemUIOverlayStyle() {
     if (_themeMode.value == ThemeMode.dark) {
-      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
-    } else {
+      // Fundo escuro → ícones claros
       SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+    } else {
+      // Fundo claro → ícones escuros
+      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark);
     }
   }
 }
