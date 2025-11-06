@@ -1,4 +1,4 @@
-import 'package:flutterplayground/ui/splash/splash_controller.dart';
+import 'package:flutterplayground/ui/splash/viewmodel/splash_controller.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
