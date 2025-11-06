@@ -7,6 +7,9 @@ import 'package:flutterplayground/ui/material/pages/actions/extended_fab_page.da
 import 'package:flutterplayground/ui/material/pages/actions/fab_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/icon_button_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/segmented_button_page.dart';
+import 'package:flutterplayground/ui/material/pages/communication/badge_page.dart';
+import 'package:flutterplayground/ui/material/pages/communication/linear_progress_indicator_page.dart';
+import 'package:flutterplayground/ui/material/pages/communication/snackbar_page.dart';
 import 'package:flutterplayground/ui/splash/splash_bindings.dart';
 
 import 'package:get/get.dart';
@@ -31,7 +34,6 @@ final class AppRouter {
       page: () => MaterialPage(),
       binding: MaterialBindings(),
     ),
-    // 1- SEÇÕES DO MATERIAL
     GetPage(
       name: Routes.commonButtons,
       page: () => CommonButtonsPage(),
@@ -51,6 +53,18 @@ final class AppRouter {
     GetPage(
       name: Routes.segmentedButton,
       page: () => SegmentedButtonPage(),
+    ),
+    GetPage(
+      name: Routes.badge,
+      page: () => BadgePage(),
+    ),
+    GetPage(
+      name: Routes.linearProgressIndicator,
+      page: () => LinearProgressIndicatorPage(),
+    ),
+    GetPage(
+      name: Routes.snackbar,
+      page: () => SnackbarPage(),
     ),
   ];
 
