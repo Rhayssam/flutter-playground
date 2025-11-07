@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterplayground/config/constants/assets.dart';
-import 'package:flutterplayground/ui/core/theme/theme_switch.dart';
+import 'package:flutterplayground/ui/core/theme/switch_variations/theme_switch.dart';
 
 class HomeDrawer extends StatelessWidget {
   const HomeDrawer({
