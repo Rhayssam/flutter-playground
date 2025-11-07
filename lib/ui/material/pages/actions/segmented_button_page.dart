@@ -12,7 +12,16 @@ class SegmentedButtonPage extends StatelessWidget {
         title: Text('SegmentedButton'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      body: Column(
+        children: [
+          Text(
+            'Botão Segmentado',
+            textAlign: TextAlign.center,
+            style: Theme.of(context).textTheme.displayMedium,
+          ),
+          Divider(color: Theme.of(context).colorScheme.outline),
+        ],
+      ),
     );
   }
 }
