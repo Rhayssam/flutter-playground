@@ -12,7 +12,38 @@ class IconButtonPage extends StatelessWidget {
         title: Text('IconButton'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Center(
+            child: Column(
+              children: [
+                Text(
+                  'IconButton (Botão de ícone)',
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.displaySmall,
+                ),
+                Divider(color: Theme.of(context).colorScheme.outline),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.abc),
+                ),
+                Ink(
+                  decoration: ShapeDecoration(
+                    shape: CircleBorder(),
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  child: IconButton(
+                    color: Theme.of(context).colorScheme.onPrimary,
+                    onPressed: () {},
+                    icon: Icon(Icons.abc),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
