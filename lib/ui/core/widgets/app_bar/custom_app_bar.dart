@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutterplayground/ui/core/theme/switch_variations/switch_theme_mode_icon_button.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar_styles.dart';
+import 'package:flutterplayground/ui/core/theme/theme_controller.dart';
+import 'package:get/get.dart';
 
 enum CustomAppBarThemeEnum { custom, primary, transparent, primaryContainer, surface }
 
@@ -63,6 +66,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     final AppBarTheme? theme = _getAppBarTheme(context);
+    final ThemeController themeController = Get.find<ThemeController>();
+
+    final effectiveActions = (actions == null || actions!.isEmpty)
+        ? [
+            SwitchThemeModeIconButton(themeController: themeController),
+          ]
+        : actions;
+
     return AppBar(
       elevation: theme?.elevation,
       iconTheme: theme?.iconTheme,
@@ -76,11 +87,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       shape: theme?.shape,
       leading: leading,
       title: title,
-      actions: actions,
+      actions: effectiveActions,
       automaticallyImplyLeading: false,
     );
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
