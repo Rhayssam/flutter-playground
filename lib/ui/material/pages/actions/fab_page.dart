@@ -31,6 +31,7 @@ class FabPage extends StatelessWidget {
                     style: Theme.of(context).textTheme.displaySmall,
                   ),
                 ),
+                Divider(color: Theme.of(context).colorScheme.outline),
                 Text(
                   'O FloatingActionButton é um botão de ação flutuante que aparece ao passar o cursor sobre o conteúdo para promover uma ação principal no aplicativo.',
                 ),
