@@ -12,7 +12,23 @@ class ExtendedFabPage extends StatelessWidget {
         title: Text('Extended FAB'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Center(
+            child: Column(
+              children: [
+                FloatingActionButton.extended(
+                  onPressed: () {},
+                  icon: Icon(Icons.add),
+                  label: Text('data'),
+                  elevation: 10,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
