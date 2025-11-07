@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterplayground/data/enum/fruits_enum.dart';
 import 'package:flutterplayground/data/enum/languages_enum.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/app_bar_back_button.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar.dart';
@@ -31,6 +32,8 @@ class SegmentedButtonPage extends GetView<SegmentedButtonController> {
                   'Um botão segmentado permite ao usuário selecionar entre um conjunto limitado de opções.',
                 ),
                 const SizedBox(height: 16),
+
+                /// 🔹 Idioma (seleção única)
                 Obx(
                   () => SegmentedButton<LanguagesEnum>(
                     segments: const [
@@ -45,14 +48,43 @@ class SegmentedButtonPage extends GetView<SegmentedButtonController> {
                   ),
                 ),
                 const SizedBox(height: 20),
-
                 Obx(
                   () => Text(
                     'Selecionado: ${controller.languageView.value.name}',
                     style: Theme.of(context).textTheme.titleMedium,
                   ),
                 ),
+
                 Divider(color: Theme.of(context).colorScheme.outline),
+                const SizedBox(height: 20),
+
+                Obx(
+                  () => SegmentedButton<FruitsEnum>(
+                    direction: Axis.vertical,
+                    multiSelectionEnabled: true,
+                    emptySelectionAllowed: true,
+                    segments: const [
+                      ButtonSegment(value: FruitsEnum.apple, label: Text('Apple')),
+                      ButtonSegment(value: FruitsEnum.banana, label: Text('Banana')),
+                      ButtonSegment(value: FruitsEnum.grape, label: Text('Grape')),
+                      ButtonSegment(value: FruitsEnum.orange, label: Text('Orange')),
+                      ButtonSegment(value: FruitsEnum.pineapple, label: Text('Pineapple')),
+                    ],
+                    selected: controller.fruitView,
+                    onSelectionChanged: (newSelection) {
+                      controller.updateSelectedFruits(newSelection);
+                    },
+                  ),
+                ),
+
+                const SizedBox(height: 20),
+                Obx(
+                  () => Text(
+                    'Frutas selecionadas: ${controller.fruitView.map((f) => f.name).join(', ')}',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                ),
               ],
             ),
           ),
