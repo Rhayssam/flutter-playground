@@ -3,7 +3,7 @@ import 'package:flutterplayground/ui/home/home_bindings.dart';
 import 'package:flutterplayground/ui/material/material_bindings.dart';
 import 'package:flutterplayground/ui/material/material_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/common_buttons/common_buttons_page.dart';
-import 'package:flutterplayground/ui/material/pages/actions/extended_fab_page.dart';
+import 'package:flutterplayground/ui/material/pages/actions/extended_fab/extended_fab_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/fab/fab_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/icon_button_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/segmented_button_page.dart';
