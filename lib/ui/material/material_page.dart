@@ -1,7 +1,5 @@
-import 'package:flutterplayground/ui/core/theme/theme_controller.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/app_bar_back_button.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar.dart';
-import 'package:flutterplayground/ui/core/theme/switch_variations/switch_theme_mode_icon_button.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section_actions.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section_comunication.dart';
