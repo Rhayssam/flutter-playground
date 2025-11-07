@@ -18,7 +18,7 @@ class SwitchThemeModeIconButton extends StatelessWidget {
           onPressed: themeController.switchThemeMode,
           icon: Icon(
             isDark ? Icons.wb_sunny : Icons.dark_mode,
-            color: Colors.white,
+            color: Theme.of(context).colorScheme.onPrimaryContainer,
           ),
         );
       },
