@@ -1,7 +1,5 @@
-import 'package:flutterplayground/ui/core/theme/theme_controller.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/app_bar_back_button.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar.dart';
-import 'package:flutterplayground/ui/core/theme/switch_variations/switch_theme_mode_icon_button.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section_actions.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section_comunication.dart';
@@ -14,16 +12,10 @@ class MaterialPage extends GetView<MaterialController> {
 
   @override
   Widget build(BuildContext context) {
-    final themeController = Get.find<ThemeController>();
     return Scaffold(
       appBar: CustomAppBar.primaryContainer(
         title: Text('Material Components'),
         leading: AppBarBackButton(),
-        actions: [
-          SwitchThemeModeIconButton(
-            themeController: themeController,
-          ),
-        ],
       ),
       body: SafeArea(
         child: Padding(
