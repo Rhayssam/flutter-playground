@@ -1,3 +1,5 @@
+import 'package:flutterplayground/ui/core/theme/switch_theme_mode_fab.dart';
+import 'package:flutterplayground/ui/core/theme/theme_controller.dart';
 import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar.dart';
 import 'package:flutterplayground/ui/core/widgets/custom_button/custom_button.dart';
 import 'package:flutterplayground/ui/home/widgets/home_drawer.dart';
@@ -10,6 +12,7 @@ class HomePage extends GetView<HomeController> {
 
   @override
   Widget build(BuildContext context) {
+    final themeController = Get.find<ThemeController>();
     return Scaffold(
       appBar: CustomAppBar.primaryContainer(
         title: Text('Home Page'),
@@ -29,6 +32,7 @@ class HomePage extends GetView<HomeController> {
         ],
       ),
       endDrawer: HomeDrawer(),
+      floatingActionButton: SwitchThemeModeFab(themeController: themeController),
       body: Padding(
         padding: const EdgeInsets.all(20),
         child: Center(
