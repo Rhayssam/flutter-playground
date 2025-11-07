@@ -17,7 +17,18 @@ class ExtendedFabPage extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           child: Center(
             child: Column(
+              spacing: 15,
               children: [
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    'FloatingActionButton estendido',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.displaySmall,
+                  ),
+                ),
+                Divider(color: Theme.of(context).colorScheme.outline),
+                Text('O FAB podendo adicionar um label'),
                 FloatingActionButton.extended(
                   onPressed: () {},
                   icon: Icon(Icons.add),
