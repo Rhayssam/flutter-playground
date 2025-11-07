@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutterplayground/ui/core/theme/theme_controller.dart';
 import 'package:get/get.dart';
 
-class SwitchThemeModeAppBar extends StatelessWidget {
-  const SwitchThemeModeAppBar({
+class SwitchThemeModeIconButton extends StatelessWidget {
+  const SwitchThemeModeIconButton({
     super.key,
     required this.themeController,
   });
