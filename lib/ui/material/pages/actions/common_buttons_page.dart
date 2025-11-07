@@ -18,17 +18,18 @@ class CommonButtonsPage extends StatelessWidget {
           child: SingleChildScrollView(
             child: Center(
               child: Column(
+                spacing: 15,
                 children: [
                   Text(
                     'Tipos de botões do Material 3',
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.displaySmall,
                   ),
-                  ElevatedButton(onPressed: () {}, child: const Text('Elevated')),
-                  FilledButton(onPressed: () {}, child: const Text('Filled')),
-                  FilledButton.tonal(onPressed: () {}, child: const Text('Filled Tonal')),
-                  OutlinedButton(onPressed: () {}, child: const Text('Outlined')),
-                  TextButton(onPressed: () {}, child: const Text('Text')),
+                  ElevatedButton(onPressed: () {}, child: const Text('ElevatedButton')),
+                  FilledButton(onPressed: () {}, child: const Text('FilledButton')),
+                  FilledButton.tonal(onPressed: () {}, child: const Text('FilledButton.Tonal')),
+                  OutlinedButton(onPressed: () {}, child: const Text('OutlinedButton')),
+                  TextButton(onPressed: () {}, child: const Text('TextButton')),
                 ],
               ),
             ),
