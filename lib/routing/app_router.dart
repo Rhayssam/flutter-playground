@@ -6,6 +6,7 @@ import 'package:flutterplayground/ui/material/pages/actions/common_buttons/commo
 import 'package:flutterplayground/ui/material/pages/actions/extended_fab/extended_fab_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/fab/fab_page.dart';
 import 'package:flutterplayground/ui/material/pages/actions/icon_button/icon_button_page.dart';
+import 'package:flutterplayground/ui/material/pages/actions/segmented_button/segmented_button_bindings.dart';
 import 'package:flutterplayground/ui/material/pages/actions/segmented_button/segmented_button_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/badge_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/linear_progress_indicator_page.dart';
@@ -53,6 +54,7 @@ final class AppRouter {
     GetPage(
       name: Routes.segmentedButton,
       page: () => SegmentedButtonPage(),
+      binding: SegmentedButtonBindings(),
     ),
     GetPage(
       name: Routes.badge,
