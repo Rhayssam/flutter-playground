@@ -12,7 +12,61 @@ class FabPage extends StatelessWidget {
         title: Text('FloatingActionButton'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: SingleChildScrollView(
+            child: Column(
+              spacing: 15,
+              children: [
+                FittedBox(
+                  fit: BoxFit.scaleDown,
+                  child: Text(
+                    'Tipos de FloatingActionButton',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.displaySmall,
+                  ),
+                ),
+                Text(
+                  'O FloatingActionButton é um botão de ação flutuante que aparece ao passar o cursor sobre o conteúdo para promover uma ação principal no aplicativo.',
+                ),
+                Text('FloatingActionButton.small'),
+                FloatingActionButton.small(
+                  heroTag: 'fab_small',
+                  onPressed: () {},
+                  child: Icon(Icons.add),
+                ),
+                FloatingActionButton(
+                  heroTag: 'fab_normal',
+                  onPressed: () {},
+                  child: Icon(Icons.add),
+                ),
+                FloatingActionButton.large(
+                  heroTag: 'fab_large',
+                  onPressed: () {},
+                  child: Icon(Icons.add),
+                ),
+                FloatingActionButton.extended(
+                  heroTag: 'fab_extended',
+                  label: Text('Botão extendido'),
+                  onPressed: () {},
+                  icon: Icon(Icons.add),
+                ),
+                FloatingActionButton(
+                  heroTag: 'fab_circle',
+                  onPressed: () {},
+                  shape: CircleBorder(),
+                  child: Icon(Icons.add),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
