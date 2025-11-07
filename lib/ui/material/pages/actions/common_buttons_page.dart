@@ -25,6 +25,7 @@ class CommonButtonsPage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.displaySmall,
                   ),
+                  Divider(color: Theme.of(context).colorScheme.outline),
                   ElevatedButton(onPressed: () {}, child: const Text('ElevatedButton')),
                   FilledButton(onPressed: () {}, child: const Text('FilledButton')),
                   FilledButton.tonal(onPressed: () {}, child: const Text('FilledButton.Tonal')),
