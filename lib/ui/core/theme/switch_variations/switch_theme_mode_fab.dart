@@ -20,7 +20,7 @@ class SwitchThemeModeFab extends StatelessWidget {
         backgroundColor: Theme.of(context).colorScheme.primary,
         child: Icon(
           isDark ? Icons.wb_sunny : Icons.dark_mode,
-          color: Colors.white,
+          color: Theme.of(context).colorScheme.onPrimary,
         ),
       );
     });
