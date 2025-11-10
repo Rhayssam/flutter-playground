@@ -10,7 +10,7 @@ import 'package:flutterplayground/ui/material/pages/actions/segmented_button/seg
 import 'package:flutterplayground/ui/material/pages/actions/segmented_button/segmented_button_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/badge/badge_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/linear_progress_indicator/linear_progress_indicator_page.dart';
-import 'package:flutterplayground/ui/material/pages/communication/snackbar_page.dart';
+import 'package:flutterplayground/ui/material/pages/communication/snackbar/snackbar_page.dart';
 import 'package:flutterplayground/ui/splash/splash_bindings.dart';
 
 import 'package:get/get.dart';
