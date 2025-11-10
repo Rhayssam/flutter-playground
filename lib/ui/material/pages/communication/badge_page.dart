@@ -12,7 +12,25 @@ class BadgePage extends StatelessWidget {
         title: Text('Badge'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      body: Center(
+        child: Column(
+          children: [
+            IconButton(
+              icon: const Badge(
+                label: Text('Your label'),
+                backgroundColor: Colors.blueAccent,
+                child: Icon(Icons.receipt),
+              ),
+              onPressed: () {},
+            ),
+            const SizedBox(height: 20),
+            IconButton(
+              icon: Badge.count(count: 1, child: const Icon(Icons.notifications)),
+              onPressed: () {},
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
