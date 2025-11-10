@@ -41,22 +41,26 @@ class FabPage extends StatelessWidget {
                   onPressed: () {},
                   child: Icon(Icons.add),
                 ),
+                Text('FloatingActionButton'),
                 FloatingActionButton(
                   heroTag: 'fab_normal',
                   onPressed: () {},
                   child: Icon(Icons.add),
                 ),
+                Text('FloatingActionButton.large'),
                 FloatingActionButton.large(
                   heroTag: 'fab_large',
                   onPressed: () {},
                   child: Icon(Icons.add),
                 ),
+                Text('FloatingActionButton.extended'),
                 FloatingActionButton.extended(
                   heroTag: 'fab_extended',
                   label: Text('Botão extendido'),
                   onPressed: () {},
                   icon: Icon(Icons.add),
                 ),
+                Text('FloatingActionButton com shape CircleBorder'),
                 FloatingActionButton(
                   heroTag: 'fab_circle',
                   onPressed: () {},
