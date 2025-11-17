@@ -12,7 +12,17 @@ class LinearProgressIndicatorPage extends StatelessWidget {
         title: Text('LinearProgressIndicator'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      body: Column(
+        spacing: 30,
+        children: [
+          Text('LinearProgressIndicator'),
+          LinearProgressIndicator(
+            color: Theme.of(context).colorScheme.primary,
+          ),
+          Text('CircularProgressIndicator'),
+          CircularProgressIndicator(),
+        ],
+      ),
     );
   }
 }
