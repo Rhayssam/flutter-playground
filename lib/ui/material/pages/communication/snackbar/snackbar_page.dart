@@ -12,7 +12,41 @@ class SnackbarPage extends StatelessWidget {
         title: Text('Snackbar'),
         leading: AppBarBackButton(),
       ),
-      body: Container(),
+      body: Padding(
+        padding: EdgeInsets.all(20),
+        child: Center(
+          child: Column(
+            spacing: 20,
+            children: [
+              ElevatedButton(
+                child: Text('Snackbar Comum'),
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Essa é a Snackbar!'),
+                    ),
+                  );
+                },
+              ),
+              ElevatedButton(
+                child: Text('SnackBar Flutuante'),
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      action: SnackBarAction(
+                        label: 'Ação',
+                        onPressed: () {},
+                      ),
+                      content: Text('Essa é a SnackBar Flutuante'),
+                      behavior: SnackBarBehavior.floating,
+                    ),
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
