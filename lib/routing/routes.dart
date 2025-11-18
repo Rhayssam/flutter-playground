@@ -13,6 +13,12 @@ final class Routes {
   static const String badge = '/material/communication/badge';
   static const String linearProgressIndicator = '/material/communication/linearProgressIndicator';
   static const String snackbar = '/material/communication/snackbar';
+  // 1.3 - Containment
+  static const String alertDialog = '/material/containment/alertDialog';
+  static const String bottomSheet = '/material/containment/bottomSheet';
+  static const String card = '/material/containment/card';
+  static const String divider = '/material/containment/divider';
+  static const String listTile = '/material/containment/listTile';
 
   static const String notFound =
       '/'; //! O Getx sempre redireciona para a rota raiz se a rota não for encontrada
