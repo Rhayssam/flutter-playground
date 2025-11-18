@@ -15,6 +15,7 @@ import 'package:flutterplayground/ui/material/pages/containment/alert_dialog_pag
 import 'package:flutterplayground/ui/material/pages/containment/bottom_sheet_page.dart';
 import 'package:flutterplayground/ui/material/pages/containment/card_page.dart';
 import 'package:flutterplayground/ui/material/pages/containment/divider_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/list_tile_page.dart';
 import 'package:flutterplayground/ui/splash/splash_bindings.dart';
 
 import 'package:get/get.dart';
@@ -90,7 +91,7 @@ final class AppRouter {
     ),
     GetPage(
       name: Routes.listTile,
-      page: () => DividerPage(),
+      page: () => ListTilePage(),
     ),
   ];
 
