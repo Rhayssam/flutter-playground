@@ -11,6 +11,10 @@ import 'package:flutterplayground/ui/material/pages/actions/segmented_button/seg
 import 'package:flutterplayground/ui/material/pages/communication/badge/badge_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/linear_progress_indicator/linear_progress_indicator_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/snackbar/snackbar_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/alert_dialog_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/bottom_sheet_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/card_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/divider_page.dart';
 import 'package:flutterplayground/ui/splash/splash_bindings.dart';
 
 import 'package:get/get.dart';
@@ -67,6 +71,26 @@ final class AppRouter {
     GetPage(
       name: Routes.snackbar,
       page: () => SnackbarPage(),
+    ),
+    GetPage(
+      name: Routes.alertDialog,
+      page: () => AlertDialogPage(),
+    ),
+    GetPage(
+      name: Routes.bottomSheet,
+      page: () => BottomSheetPage(),
+    ),
+    GetPage(
+      name: Routes.card,
+      page: () => CardPage(),
+    ),
+    GetPage(
+      name: Routes.divider,
+      page: () => DividerPage(),
+    ),
+    GetPage(
+      name: Routes.listTile,
+      page: () => DividerPage(),
     ),
   ];
 
