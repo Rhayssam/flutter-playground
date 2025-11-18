@@ -34,7 +34,7 @@ class SectionContainment extends StatelessWidget {
         CustomButton(
           title: 'Divider',
           content: 'Linha fina que agrupa conteúdo em listas e containers.',
-          onTap: _controller.goToSnackbarPage,
+          onTap: _controller.goToDividerPage,
         ),
         CustomButton(
           title: 'ListTile',
