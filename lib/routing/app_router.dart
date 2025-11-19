@@ -11,10 +11,10 @@ import 'package:flutterplayground/ui/material/pages/actions/segmented_button/seg
 import 'package:flutterplayground/ui/material/pages/communication/badge/badge_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/linear_progress_indicator/linear_progress_indicator_page.dart';
 import 'package:flutterplayground/ui/material/pages/communication/snackbar/snackbar_page.dart';
-import 'package:flutterplayground/ui/material/pages/containment/alert_dialog_page.dart';
-import 'package:flutterplayground/ui/material/pages/containment/bottom_sheet_page.dart';
-import 'package:flutterplayground/ui/material/pages/containment/card_page.dart';
-import 'package:flutterplayground/ui/material/pages/containment/divider_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/alert_dialog/alert_dialog_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/bottom_sheet/bottom_sheet_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/card/card_page.dart';
+import 'package:flutterplayground/ui/material/pages/containment/divider/divider_page.dart';
 import 'package:flutterplayground/ui/material/pages/containment/list_tile/list_tile_bindings.dart';
 import 'package:flutterplayground/ui/material/pages/containment/list_tile/list_tile_page.dart';
 import 'package:flutterplayground/ui/splash/splash_bindings.dart';
