@@ -88,4 +88,10 @@ class MaterialController extends GetxController {
       Routes.appBar,
     );
   }
+
+  Future<void> goToBottomAppBarPage() async {
+    await Get.toNamed(
+      Routes.bottomAppBar,
+    );
+  }
 }
