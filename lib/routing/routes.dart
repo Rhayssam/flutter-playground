@@ -19,6 +19,8 @@ final class Routes {
   static const String card = '/material/containment/card';
   static const String divider = '/material/containment/divider';
   static const String listTile = '/material/containment/listTile';
+  // 1.4 - Navigation
+  static const String appBar = '/material/navigation/appBar';
 
   static const String notFound =
       '/'; //! O Getx sempre redireciona para a rota raiz se a rota não for encontrada
