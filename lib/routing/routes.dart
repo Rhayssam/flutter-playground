@@ -23,6 +23,7 @@ final class Routes {
   static const String appBar = '/material/navigation/appBar';
   static const String bottomAppBar = '/material/navigation/bottomAppBar';
   static const String navigationBar = '/material/navigation/navigationBar';
+  static const String navigationDrawer = '/material/navigation/navigationDrawer';
 
   static const String notFound =
       '/'; //! O Getx sempre redireciona para a rota raiz se a rota não for encontrada
