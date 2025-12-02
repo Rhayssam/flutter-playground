@@ -9,7 +9,24 @@ class BottomAppBarPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('BottomAppBarPage'),
       ),
-      body: Container(),
+      body: Column(
+        children: [
+          BottomAppBar(
+            color: Theme.of(context).colorScheme.primaryContainer,
+            child: Row(
+              children: <Widget>[
+                IconButton(
+                  tooltip: 'Open navigation menu',
+                  icon: const Icon(Icons.menu),
+                  onPressed: () {},
+                ),
+                IconButton(tooltip: 'Search', icon: const Icon(Icons.search), onPressed: () {}),
+                IconButton(tooltip: 'Favorite', icon: const Icon(Icons.favorite), onPressed: () {}),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
