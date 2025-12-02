@@ -31,6 +31,11 @@ class SectionNavigation extends StatelessWidget {
               'Container persistente que permite alternar entre os destinos primários em um aplicativo.',
           onTap: _controller.goToNavigationBarPage,
         ),
+        CustomButton(
+          title: 'NavigationDrawer',
+          content: 'Container que desliza da borda superior do app para navegar até outras seções.',
+          onTap: _controller.goToNavigationDrawerPage,
+        ),
       ],
     );
   }
