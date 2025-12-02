@@ -20,6 +20,7 @@ import 'package:flutterplayground/ui/material/pages/containment/list_tile/list_t
 import 'package:flutterplayground/ui/material/pages/navigation/app_bar/app_bar_page.dart';
 import 'package:flutterplayground/ui/material/pages/navigation/bottom_app_bar/bottom_app_bar_page.dart';
 import 'package:flutterplayground/ui/material/pages/navigation/navigation_bar/navigation_bar_page.dart';
+import 'package:flutterplayground/ui/material/pages/navigation/navigation_drawer/navigation_drawer_page.dart';
 import 'package:flutterplayground/ui/splash/splash_bindings.dart';
 
 import 'package:get/get.dart';
@@ -109,6 +110,10 @@ final class AppRouter {
     GetPage(
       name: Routes.navigationBar,
       page: () => NavigationBarPage(),
+    ),
+    GetPage(
+      name: Routes.navigationDrawer,
+      page: () => NavigationDrawerPage(),
     ),
   ];
 
