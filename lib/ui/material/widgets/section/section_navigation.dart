@@ -25,6 +25,12 @@ class SectionNavigation extends StatelessWidget {
               'Container que exibe a navegação e as principais ações na parte inferior da tela.',
           onTap: _controller.goToBottomAppBarPage,
         ),
+        CustomButton(
+          title: 'BottomAppBarPage',
+          content:
+              'Container persistente que permite alternar entre os destinos primários em um aplicativo.',
+          onTap: _controller.goToNavigationBarPage,
+        ),
       ],
     );
   }
