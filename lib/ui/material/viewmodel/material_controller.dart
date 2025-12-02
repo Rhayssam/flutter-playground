@@ -100,4 +100,10 @@ class MaterialController extends GetxController {
       Routes.navigationBar,
     );
   }
+
+  Future<void> goToNavigationDrawerPage() async {
+    await Get.toNamed(
+      Routes.navigationDrawer,
+    );
+  }
 }
