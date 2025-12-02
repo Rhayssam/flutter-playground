@@ -94,4 +94,10 @@ class MaterialController extends GetxController {
       Routes.bottomAppBar,
     );
   }
+
+  Future<void> goToNavigationBarPage() async {
+    await Get.toNamed(
+      Routes.navigationBar,
+    );
+  }
 }
