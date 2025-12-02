@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+import 'package:flutterplayground/ui/core/widgets/custom_button/custom_button.dart';
+import 'package:flutterplayground/ui/material/viewmodel/material_controller.dart';
+import 'package:get/get.dart';
+
+class SectionNavigation extends StatelessWidget {
+  const SectionNavigation({
+    super.key,
+  });
+  MaterialController get _controller => Get.find<MaterialController>();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      spacing: 15,
+      children: [
+        CustomButton(
+          title: 'AppBar',
+          content: 'Container que exibe conteúdo e ações na parte superior da tela.',
+          onTap: _controller.goToAppBarPage,
+        ),
+      ],
+    );
+  }
+}
