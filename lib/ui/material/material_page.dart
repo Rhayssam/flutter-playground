@@ -4,6 +4,7 @@ import 'package:flutterplayground/ui/material/widgets/section/section.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section_actions.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section_comunication.dart';
 import 'package:flutterplayground/ui/material/widgets/section/section_containment.dart';
+import 'package:flutterplayground/ui/material/widgets/section/section_navigation.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'viewmodel/material_controller.dart';
@@ -37,6 +38,7 @@ class MaterialPage extends GetView<MaterialController> {
                 Section(sectionName: 'Ações', content: SectionActions()),
                 Section(sectionName: 'Comunication', content: SectionComunication()),
                 Section(sectionName: 'Containment', content: SectionContainment()),
+                Section(sectionName: 'Navigation', content: SectionNavigation()),
               ],
             ),
           ),
