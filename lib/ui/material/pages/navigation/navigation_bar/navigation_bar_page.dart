@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterplayground/ui/core/widgets/app_bar/app_bar_back_button.dart';
+import 'package:flutterplayground/ui/core/widgets/app_bar/custom_app_bar.dart';
 
 class NavigationBarPage extends StatelessWidget {
   const NavigationBarPage({super.key});
@@ -6,8 +8,9 @@ class NavigationBarPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: CustomAppBar.primaryContainer(
         title: const Text('NavigationBar'),
+        leading: AppBarBackButton(),
       ),
       body: NavigationBar(
         destinations: [
