@@ -13,6 +13,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.leading,
     this.title,
     this.theme,
+    this.bottom,
   }) : customAppBarThemeEnum = CustomAppBarThemeEnum.custom;
 
   const CustomAppBar.transparent({
@@ -20,6 +21,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leading,
     this.title,
+    this.bottom,
   }) : customAppBarThemeEnum = CustomAppBarThemeEnum.transparent,
        theme = null;
 
@@ -28,6 +30,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leading,
     this.title,
+    this.bottom,
   }) : customAppBarThemeEnum = CustomAppBarThemeEnum.primary,
        theme = null;
 
@@ -36,6 +39,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leading,
     this.title,
+    this.bottom,
   }) : customAppBarThemeEnum = CustomAppBarThemeEnum.primaryContainer,
        theme = null;
 
@@ -44,6 +48,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actions,
     this.leading,
     this.title,
+    this.bottom,
   }) : customAppBarThemeEnum = CustomAppBarThemeEnum.surface,
        theme = null;
 
@@ -52,6 +57,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? leading;
   final Widget? title;
   final AppBarTheme? theme;
+  final PreferredSizeWidget? bottom;
 
   AppBarTheme? _getAppBarTheme(BuildContext context) {
     return switch (customAppBarThemeEnum) {
@@ -69,9 +75,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     final ThemeController themeController = Get.find<ThemeController>();
 
     final effectiveActions = (actions == null || actions!.isEmpty)
-        ? [
-            SwitchThemeModeIconButton(themeController: themeController),
-          ]
+        ? [SwitchThemeModeIconButton(themeController: themeController)]
         : actions;
 
     return AppBar(
@@ -89,9 +93,10 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       title: title,
       actions: effectiveActions,
       automaticallyImplyLeading: false,
+      bottom: bottom,
     );
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => Size.fromHeight(kToolbarHeight + (bottom?.preferredSize.height ?? 0));
 }
