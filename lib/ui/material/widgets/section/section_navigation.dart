@@ -36,6 +36,12 @@ class SectionNavigation extends StatelessWidget {
           content: 'Container que desliza da borda superior do app para navegar até outras seções.',
           onTap: _controller.goToNavigationDrawerPage,
         ),
+        CustomButton(
+          title: 'TabBar',
+          content:
+              'Containers em camada que organiza o conteúdo em diferentes telas, conjuntos de dados e outras interações.',
+          onTap: _controller.goToTabBarPage,
+        ),
       ],
     );
   }
