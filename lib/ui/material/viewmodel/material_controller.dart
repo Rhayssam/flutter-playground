@@ -106,4 +106,10 @@ class MaterialController extends GetxController {
       Routes.navigationDrawer,
     );
   }
+
+  Future<void> goToTabBarPage() async {
+    await Get.toNamed(
+      Routes.tabBar,
+    );
+  }
 }
